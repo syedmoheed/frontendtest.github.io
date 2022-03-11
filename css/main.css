@@ -1,0 +1,1546 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,300;0,700;1,100&display=swap');
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+    font-size: 62.5%;
+    /* 1em=10px */
+    width: 100%;
+    margin: auto;
+    overflow-x: hidden;
+}
+/***************************
+****************************
+Header section styling
+****************************
+***************************/
+.header{
+    padding: 0em 10em 0em 10em;
+    height: 10em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #08083D;
+    border-bottom: 1px solid #FFFFFF;
+}
+.logo{
+    font-size: 3em;
+    color: #FFFFFF;
+    font-weight: 800;
+    
+}
+
+.navbar-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4.8em;
+    list-style: none;
+}
+
+.navbar-links:link,
+.navbar-links:visited{
+    color: #FFFFFF;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6em;
+    transition: all 0.3s;
+}
+
+.mobile-nav-icon{
+    color: #FFFFFF;
+    width: 4em;
+    height: 4em;
+}
+.mobile-navbar-btn{
+    display: none;
+    background: transparent;
+    cursor: pointer;
+}
+.mobile-nav-icon[name="close-outline"]{
+    display: none;
+}
+
+.contact-btn{
+        background-color: #23CE6B;
+        border: none;
+        color: #FFFFFF;
+        padding: 10px 39px;
+        border-radius: 4px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      
+}
+.flex-child:first-child {
+    margin-right: 20px;
+} 
+.header-section{
+width: 100%;
+height: 80vh;
+/* UI Properties */
+background: transparent url('../assets/images/Group\ 1321.png') 0% 0% no-repeat padding-box;
+background-size: 100% 100%;
+opacity: 1;
+display: inline-flex;
+}
+.header-button{
+    background: #23CE6B 0% 0% no-repeat padding-box;
+    box-shadow: 0px 8px 8px #23CE6B80;
+    border-radius: 2em;
+    padding: 1em 2em 1em 2em;
+    font: 1.6em;
+    font-weight: 100;
+    font-size: 1.9em;
+    border: none;
+    display: flex;
+    justify-content: space-around ;
+    color: #FFFFFF;
+    margin-top: 3em;   
+}
+.header-button:hover {
+    margin-top: 2.5em;
+    margin-bottom: 0.5em;
+    transition: 0.3s linear;
+}
+.ml-2{
+    margin-left: 1em;
+}
+.mr-2{
+    margin-right: 1em;
+}
+.h-3{
+    font-size: 2em;
+    font-weight: 200;
+    text-align: center;
+    color: #FFFFFF;
+}
+.headerinner-section{
+    margin: auto;
+    width: 85%;
+}
+.header-1{
+    float: left;
+}
+.header-1 h4{
+    text-align: left;
+    font-size: 5em;
+    font-weight: 800;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.header-1 p{
+    text-align: left;
+    font-size: 2.4em;
+    font-weight: normal;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.header-2{
+    float: right;
+    width: 45%;
+}
+.header-2 img{
+    width: 100%;
+}
+
+.carousel-cell{
+    width: 30%;
+    height: 400px;
+    display: inline-block;
+    margin: 0 15px;
+    border:3px solid #08083D;
+    border-radius: 8px;
+    overflow: hidden;
+}
+/***************************
+****************************
+Carosel styling
+****************************
+***************************/
+.carousel-cell img{
+    width: 100%;
+    height: 40em;
+    object-fit: cover;
+}
+.flickity-page-dots .dot{
+    background-color: #08083D;
+}
+.carousel-cell::before{
+    display: block;
+}
+.carousel{
+    display: none;
+}
+
+/***************************
+****************************
+Header mobile section styling
+****************************
+***************************/
+.mobile-img{
+    display: none;
+}
+.mobile-section{
+    background:#F3F4F9;
+    background-repeat: no-repeat;
+    background-size: 100%,100%;
+    width: 100%;
+    color: #08083D;
+}
+.mobile-section h4{
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.card-image{
+    width: 40%;
+    height: 40%;
+    display: block;
+    margin: auto;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding-left: 2em;
+    height: 20em; 
+    text-align: center;
+  }
+  .column p{
+      font-size: 1.3em;
+      font-weight: 800;
+      line-height: 1.5em;
+      margin-top: 1em;
+      
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.mobile-section{
+    display: none;
+}
+.mobile-section-3{
+    background: #08083D 0% 0% no-repeat padding-box;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.mobile-section-3 h4{
+    font-size: 3em;
+    font-size: 800;
+    color: #FFFFFF;
+    padding-top: 2em;
+} 
+.mobile-section-3 p{
+    font-size: 1.4em;
+    color: #FFFFFF;
+    padding-top: 2em;
+    width: 80%;
+    margin: auto;
+} 
+.mobile-section-3{
+    display: none;
+}
+
+/***************************
+****************************
+Services section stylings
+****************************
+***************************/
+.services-section{
+    width: 100%;
+    height: auto;
+    background:#F3F4F9;
+    background-repeat: no-repeat;
+    background-size: 100%,100%;
+}
+.content{
+    width: 50%;
+    margin: auto;
+    padding-bottom: 2em;
+    padding-top: 2em;
+
+}
+.content ul li{
+    list-style: none;
+    color: #08083D;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin:auto;
+    line-height: 2em;
+    text-align: left;
+    padding-left: 2em;
+}
+
+.h-1{
+    font-size: 5em;
+    font-weight: 800;
+    text-align: center;
+    color: #08083D;
+    margin-bottom: 1em;
+   
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
+/***************************
+****************************
+Gallery section styling
+****************************
+***************************/
+  .gallery-section{
+    width: 100%;
+    height: auto;
+    background:#08083D;
+    background-repeat: no-repeat;
+    background-size: 100%,100%;
+  }
+ .gallery-section  .h-2{
+    font-size: 4em;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 1.5em;
+  }
+  .gallery-section p{
+    font-size: 1.5em;
+    font-weight: 100;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+.inner-section{
+      margin: auto;
+      width: 80%;
+  }
+  .float-section{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      gap: 3em;
+      padding-top: 2em;
+      padding-bottom: 4em;
+  }
+  .Image-1{
+    opacity: 0.6;
+    width: 60%;
+    text-align: center;
+  }
+  .Image-3{
+    opacity: 0.6;
+    width: 60%;
+    text-align: center;
+  }
+  .Image-2{
+    opacity: 1;
+    width: 80%;
+    text-align: center;
+  }
+/***************************
+****************************
+About section stylings
+****************************
+***************************/
+.about-section{
+    background: #6184D8 0% 0% no-repeat padding-box;
+    opacity: 0.9;
+     width: 100%;
+     height: auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-bottom: 10em;
+}
+.about-text{
+    width: 50%;
+    float: left;
+    padding-top: 5em;
+    margin-left: 6em;
+}
+.about-images{
+    width: 50%;
+    float: right;
+}
+.about-text h4{
+    color: #23CE6B;
+    font-size: 5em;
+    font-weight: 800;
+}
+.about-text p{
+    font-size: 2em;
+    font-weight: normal;
+    color: #FFFFFF;
+    padding-top: 2em;
+}
+.text-light{
+    color: #FFFFFF;
+}
+.image1{
+   width: 80%;
+   float: right;
+
+}
+
+/***************************
+****************************
+Header element  animation
+****************************
+***************************/
+.bg-blue {
+    width: 100%;
+    height: 100%;
+    background-color:#316EFF;
+    animation: pulse 5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      background-color: #FFFFFF;
+      color: #316EFF;
+    }
+    50% {
+        background-color:#316EFF;
+    }
+  }
+  
+  
+
+/***************************
+****************************
+Cards section stylings
+****************************
+***************************/
+.card-section{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+     opacity: 1;
+     width: 100%;
+     height: auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-bottom: 10em;
+}
+.card-section h4{
+text-align: center;
+font-size: 4em;
+font-weight: 700;
+letter-spacing: 0px;
+color: #08083D;
+opacity: 1;
+margin-top: 1em;
+}
+.card{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 5em;
+}
+.card h4{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #08083D;
+    opacity: 1;
+    margin-bottom: 1em;  
+}
+.card p{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    font-size: 1.4em;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #08083D;
+    opacity: 1;  
+}
+.float-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2em;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+.card img{
+    width: 50%;
+}
+
+/***************************
+****************************
+Steps section stylings
+****************************
+***************************/
+.steps-section{
+    background: transparent linear-gradient(139deg, #6184D8 0%, #08083D 100%) 0% 0% no-repeat padding-box;
+    opacity: 0.9;
+    width: 100%;
+    height: auto;
+    padding-bottom: 2em;
+}
+.steps-section h4{
+    text-align: center;
+    font-size: 4em;
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-bottom: 1em;  
+}
+.long-cards{
+    width: 100%;
+    margin: auto;
+}
+.step{
+text-align: left;
+font-size: 2em;
+font-weight: 700;
+letter-spacing: 0px;
+color: #23CE6B;
+text-transform: uppercase;
+opacity: 1;
+margin-bottom: 0.5em;
+}
+.heading{
+letter-spacing: 0px;
+font-size: 3em;
+font-weight: 700;
+color: #FFFFFF;
+opacity: 1;
+text-align: left;
+margin-bottom: 0.5em;
+}
+.para{
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: normal;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-bottom: 0.5em;
+
+}
+.long-cards{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5em;
+}
+.right-content-icon{
+   background:  transparent linear-gradient(328deg, #4D80FB 0%, #23CE6B 100%) 0% 0% no-repeat padding-box;
+   opacity: 1;
+   height: 8em;
+   width: 8em;
+   border-radius: 50%;
+}
+.right-content-icon img{
+    width: 100%;
+    padding: 2.2em ;
+}
+.next-icon{
+    width: 7%;
+    margin-top: 1em;
+}
+
+.box{
+    width: 70%;
+    margin: auto;
+    padding: 2em;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    opacity: 1;
+    text-align: center;
+}
+.box p{
+    font-size: 1.5em;
+    font-weight: normal;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+/***************************
+****************************
+Contact Section stylings
+****************************
+***************************/
+.contact-section{
+    width: 100%;
+    height: 65vh;
+    /* UI Properties */
+    background: transparent url('../assets/images/Group\ 2110.png') 0% 0% no-repeat padding-box;
+    background-size: contain;
+    background-size: 100% 100%;
+    opacity: 1;
+}
+.contact-section h4{
+    text-align: left;
+    font-size: 4em;
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.contact-section p{
+    font-size: 1.5em;
+    font-weight: normal;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-top: 2em;
+}
+.side-section{
+    width: 70%;
+    float: left;
+    margin-top: 5em;
+}
+.text-green{
+    color: #23CE6B;
+}
+.contact-button{
+    background: #23CE6B 0% 0% no-repeat padding-box;
+    padding: 1em;
+    border: none;
+    box-shadow: 0px 8px 8px #23CE6B80;
+    border-radius: 100px;
+    opacity: 1;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin-top: 1em;
+}
+
+/***************************
+****************************
+Reviews section stylings
+****************************
+***************************/
+.reviews-section{
+    width: 100%;
+    height: 10em;
+    /* UI Properties */
+    background:  url('../assets/images/Rectangle\ 1219.svg') 0% 0% no-repeat padding-box;
+    background-size: cover;
+    /* opacity: 0.45; */
+}
+.reviews-section h4{
+    text-align: center;
+    font-size: 4em;
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.reviews-section p{
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: normal;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-bottom: 2em;
+
+}
+
+.reviews-card{
+    width: 20%;
+    height: 40.8em;
+    box-shadow: 0px 6px 8px #00000026;
+    opacity: 1;
+    text-align: center;
+    float: left;
+    }
+.card-bg-green{
+    background: #23CE6B 0% 0% no-repeat padding-box;
+
+}
+.card-bg-blue{
+    background: #08083D 0% 0% no-repeat padding-box;
+
+}
+.card-bg-sky{
+    background: #6184D8 0% 0% no-repeat padding-box;
+
+}
+    .reviews-card p{
+    width: 80%;
+    font-size: 1.4em;
+    font-weight: normal;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin: 2em auto;
+    }
+    .sub-head{
+        width: 80%;
+        font-size: 1em;
+        font-weight: normal;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+    }
+    .reviews-card h4{
+        width: 160px;
+        height: 35px;
+        font-size: 2em;
+        font-weight: normal;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        margin:  auto;
+
+    }
+    .quote-icon{
+        width: 10%;
+        margin-top: 5em;
+    }
+    .mask-img{
+        width: 40%;
+    }
+/***************************
+****************************
+Certificate Section stylings
+****************************
+***************************/
+.certificate-section{
+    background: transparent linear-gradient(114deg, #6184D8 0%, #08083D 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    padding-bottom: 2em;
+}
+.certificate-section h4{
+    width: 644px;
+    height: 62px;
+    /* UI Properties */
+    text-align: center;
+    font-size: 4em;
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin: auto;
+    padding-top: 11em;
+  
+}
+.certificate-section img{
+    display: block;
+    margin: 1em auto;
+    width: 16%;
+    padding-top: 7em;
+
+    }
+.certificate-section p{
+    width: 50%;
+    height: 20em;
+    margin: auto;
+    font-size: 1.5em;
+    font-weight: normal;
+    /* UI Properties */
+    text-align: center;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.certificate-button{
+    background: #23CE6B 0% 0% no-repeat padding-box;
+    padding: 1em;
+    border: none;
+    box-shadow: 0px 8px 8px #23CE6B80;
+    border-radius: 100px;
+    opacity: 1;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin-top: 1em;
+}
+/***************************
+****************************
+Last section stylings
+****************************
+***************************/
+.last-section{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width: 100%;
+    height: 70vh;
+    padding-bottom: 2em;
+}
+.last-left-section{
+    width: 50%;
+    float: left;
+}
+.last-left-section img{
+    width: 75%;
+    margin-top: 5em;
+}
+.last-right-section{
+    width: 50%;
+    float: right;
+}
+.last-right-section p{
+    text-align: left;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #08083D;
+    opacity: 1;
+    margin-top: 3em;
+}
+.last-right-section h4{
+    text-align: left;
+    width: 15em;
+    font-size: 4em;
+    font-weight: 800;
+    letter-spacing: 0px;
+    color: #08083D;
+    opacity: 1;
+}
+/***************************
+****************************
+Footer section stylings
+****************************
+***************************/
+.footer{
+    width: 100%;
+    height: 20.3em;
+    /* UI Properties */
+    background: transparent url('../assets/images/Group\ 2176.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding: 30px 140px;
+}
+.widgets{
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    gap: 10em;
+}
+.first-widget{
+    text-align: right;
+    line-height: 3em;
+    font-size: 1.4em;
+}
+.second-widget{
+    text-align: right;
+    line-height: 3em;
+}
+.links{
+    display: flex;
+    gap:5em;
+
+}
+.links li a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.copyright{
+    display: flex;
+    justify-content: flex-end;
+    margin-top:0.5em;
+    gap: 10em;
+    font-size: 1.4em;
+
+}
+.copyright ul{
+    list-style: none;
+}
+.copyright p{
+    color: #FFFFFF;
+}
+.social{
+    margin-top: 1em;
+}
+.social img{
+    width:  20%;
+    padding-left: 1em;
+}
+/***************************
+****************************
+Mobile and tablet footer
+****************************
+***************************/
+.mobile-footer{
+    display: none;
+    width:100%;
+    height:10em;
+    background: #08083D 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.mobile-footer ul{
+    list-style: none;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 1.3em;
+    line-height: 1.8em;
+}
+
+/***************************
+****************************
+Mobile Responsive stylings
+****************************
+***************************/
+@media (max-width: 576px) {  
+/***************************
+****************************
+Header section styling
+****************************
+***************************/
+.header-section {
+    width: 100%;
+    height: 60vh;
+    background: transparent url(../assets/images/Group\ 1321.png) 0% 0% no-repeat padding-box;
+    background-size: contain;
+    background-size: 100% 100%;
+    opacity: 1;
+}
+.header-button{
+    margin-top: 1em;
+}
+.header-1{
+    margin-top: 6em;
+}
+.h-1{
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+    color: #08083D;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+}
+
+.header-2{
+    display: none;
+}
+
+.header-1 h4{
+    font-size: 3em;
+    text-align: center;
+}
+.bg-blue{
+    width: 50%;
+    text-align: center !important;
+    margin-top: 2em;
+}
+.header-1 p{
+    font-size: 1.4em;
+    text-align: center;   
+}
+.header-button{
+    font-size: 1.4em;
+    padding: 0.8em;
+}
+.header-button img{
+    width: 1em;
+}
+.logo{
+    font-size: 1.5em;
+}
+.mobile-nav-icon{
+    color: #FFFFFF;
+    width: 3em;
+    height: 3em;
+}
+.side-section {
+    width: 80%;
+    margin-left: 1em;
+}
+.contact-section p{
+    width: 90%;
+}
+
+/***************************
+****************************
+Mobile Section 1 stylings
+****************************
+***************************/
+.mobile-img{
+    display: block;
+    width: 100%;
+    height: 35vh;
+    background: #08083D;
+    background-size: contain;
+    background-size: 100% 100%;
+    opacity: 1;
+}
+.mobile-img img{
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+/***************************
+****************************
+serivices stylings
+****************************
+***************************/
+.content ul li {
+    font-size: 1.2em ;
+    color: #FFFFFF;
+    text-align: left;
+}
+.h-1{
+    color: #FFFFFF;
+}
+.services-section {
+    width: 100%;
+    height: 100vh;
+    background: transparent url('../assets/images/Mask\ Group\ 877@2x.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.float-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2em;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.card img{
+    width: 50%;
+}
+.inner-section{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    margin: auto;
+
+}
+.contact-section{
+    width: 100%;
+    height: 70vh !important;
+}
+.Image-1{
+    display: none;
+}
+.Image-3{
+    display: none;
+}
+/***************************
+****************************
+Cards stylings
+****************************
+***************************/
+.long-cards {
+display: block;
+text-align: center;
+}
+/***************************
+****************************
+Mobile Section 2 stylings
+****************************
+***************************/
+.mobile-section{
+    display: block;
+}
+/***************************
+****************************
+Galley section stylings
+****************************
+***************************/
+.gallery-section .h-2 {
+    font-size: 1.5em !important;
+}
+.gallery-section p {
+    font-size: 1em;
+    width: 80%;
+    margin: auto;
+    padding-top: 2em;
+}
+.image1 {
+    display: none;
+}
+.Image-2 img{
+    width: 74%;
+    display: block;
+    margin: auto;
+}
+.card p {
+    width: 60%;
+}
+
+/***************************
+****************************
+Step section stylings
+****************************
+***************************/
+.steps-section h4 {
+    font-size: 2em;
+}
+.right-content-icon {
+    height: 7em !important;
+    width: 7em !important;
+}
+.box {
+    width: 80% !important;
+}
+.steps-section h4 {
+    font-size: 2em !important;
+}
+.box p {
+    font-size: 1em;
+}
+.mobile-section-3{
+    display: block;
+}
+.about-text {
+    padding-top: 1em;
+    margin-left: 1em;
+    text-align: center;
+}
+.about-section p{
+    text-align: left;
+}
+.contact-section{
+    display: none;
+}
+.mask-img {
+    width: 27% !important;
+}
+/***************************
+****************************
+Certificate section stylings
+****************************
+***************************/
+.certificate-section img  {
+    width: 50% !important;
+    padding-top: 10em;
+}
+.last-left-section{
+    display: none;
+}
+.last-right-section{
+    width: 100%;
+    text-align: center;
+}
+.last-right-section h4{
+    text-align: center;
+    width: 100%;
+}
+.last-right-section p{
+    text-align: center;
+    width: 100%;
+}
+/***************************
+****************************
+Footer Stylings
+****************************
+***************************/
+.footer{
+    display: none;
+}
+.float-section{
+    display: none;
+}
+.carousel{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+.carousel-cell{
+    width: 100%;
+}
+.flickity-button-icon{
+    color: #08083D;
+}
+.flickity-button{
+    background: #08083D;
+}
+.mobile-footer{
+    display: block;
+}
+}
+/***************************
+****************************
+Meduim devices Stylings
+****************************
+***************************/
+@media (max-width: 768px) { 
+ /***************************
+****************************
+Haeder stylings
+****************************
+***************************/
+    .navbar{
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        width: 100%;
+        height: 100vh;
+        background-color: #08083D;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* for transition effect */
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+    }
+    .navbar-list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .active .navbar{
+        transform: translate(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"]{
+        display: block;
+    }
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"]{
+        display: none;
+    }
+
+    .header-button{
+       margin: 1em auto;
+
+    }
+    .header{
+        position: relative;
+    } 
+    .header-1{
+        width: 100%;
+    }
+    .header-2{
+        display: none;
+    }
+    .header-1 h4 {
+        font-size: 4em;
+        text-align: center;
+    }
+    .header-1 p{
+        text-align: center;
+        margin-top: 1em;
+    }
+    .h-3{
+        margin-right: 1em;
+    }
+    .h-1{
+        font-size: 3em;
+    }
+    .mobile-navbar-btn{
+        display: block;
+        z-index: 999;
+    }
+    .header-button img {
+        width: 1em;
+        margin: auto 0.3em;
+    }
+/***************************
+****************************
+Gallery section stylings
+****************************
+***************************/
+.gallery-section .h-2{
+    font-size: 3em;
+}
+
+
+
+/***************************
+****************************
+About section styings
+****************************
+***************************/
+    .about-section {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+     .about-text{
+         width: 80%;
+     }
+     .about-text h4{
+        font-size: 3em  !important
+     }
+     .about-text p {
+        font-size: 1.5em !important;
+     }
+/***************************
+****************************
+Card Section stylings
+****************************
+***************************/
+.card-section h4 {
+    font-size: 3em;
+}
+.float-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.card {
+    width: 100%;
+
+}
+.card-section h4 {
+    font-size: 2em;
+
+}
+.card-section p {
+    font-size: 1.2em;
+    font-weight: lighter;
+
+}
+/***************************
+****************************
+Step section stylings
+****************************
+***************************/
+.content{
+        width: 100%;
+        margin: auto;
+    
+    }
+.steps-section h4 {
+    font-size: 3em;
+}
+.long-cards {
+    width: 90%;
+}
+    .content ul li{
+        line-height: 2em;
+        font-size: 1.5em;
+        
+    }
+.right-content-icon {
+    height: 7em;
+    width: 9em;
+}
+/***************************
+****************************
+Box stylings
+****************************
+***************************/
+.box {
+    width: 100%;
+}
+
+/***************************
+****************************
+Contact-section stylings
+****************************
+***************************/
+.side-section {
+    width: 100%;
+}
+.contact-section h4 {
+    font-size: 3em;
+}
+.contact-section {
+    height: 70vh;
+}  
+/***************************
+****************************
+Reviews Section Stylings
+****************************
+***************************/
+.reviews-card {
+    width: 100%;
+    padding: 2em;
+    height: auto;
+}
+.quote-icon {
+    width: 6%;
+    margin-top: 1em;
+}
+.mask-img {
+    width: 16%;
+}
+/***************************
+****************************
+Certificate section stylings
+****************************
+***************************/
+.certificate-section h4 {
+    width: 100%;
+    height: 6em;
+    font-size: 3em;
+
+}
+.certificate-section p {
+    width: 90%;
+    margin-top: 2em;
+}
+.certificate-button{
+    font-size: 1em;
+    margin-top: 3em;
+}
+/***************************
+****************************
+Last Section Stylings
+****************************
+***************************/
+.last-section {
+    height: 35vh  !important;
+}
+.last-right-section h4 {
+    font-size: 2em !important;
+}
+.last-right-section p {
+    font-size: 1em;
+}
+/***************************
+****************************
+Footer Stylings
+****************************
+***************************/
+.footer{
+    display: none;
+}
+.mobile-footer{
+    display: block;
+
+}
+/***************************
+****************************
+Large Devices Stylings
+****************************
+***************************/
+@media (max-width: 992px) {
+/***************************
+****************************
+Header Stylings
+****************************
+***************************/
+    .h-1 {
+        font-size: 3em;
+    }
+    .header-button {
+        padding: 0.7em 1.5em 0.7em 1.5em;
+    }
+    .header-1 h4 {
+        font-size: 3em;
+    }
+    .header-1 p {
+        font-size: 1.6em;
+        margin-top: 1em;
+   
+    }
+    .col-2{
+        display: none;
+    }
+    .col-1{
+        float: left;
+        color: #FFFFFF;
+        width: 100%;
+        padding: 6em 10em 0em 10em;
+        text-align: center;
+    
+    }
+/***************************
+****************************
+Footer Stylings
+****************************
+***************************/
+    .content{
+        width: 80%;
+        margin: auto;
+    
+    }
+    .copyright {
+        gap: 5em;
+ 
+    }
+    .links {
+        gap: 1.5em;
+    }
+
+}
+
+
+
+/***************************
+****************************
+Large devices stylings
+****************************
+***************************/
+@media (max-width: 1200px) { 
+/***************************
+****************************
+Contact section stylings
+****************************
+***************************/
+    .contact-section {
+        height: 70vh;
+    }
+    .last-right-section h4 {
+        font-size: 3em;
+    }
+/***************************
+****************************
+Galley section stylings
+****************************
+***************************/
+    .gallery-section .h-2 {
+        font-size: 3em;
+    }
+    .Image-3 {
+     display: none;
+    }
+    .Image-1 {
+    display: none;
+    }
+
+/***************************
+****************************
+About Section stylings
+****************************
+***************************/
+    .about-text h4 {
+    font-size: 3rem;
+    }
+    .about-text p {
+        font-size: 1.5em;
+    } 
+    .contact-section h4 {
+        font-size: 3em;
+    }  
+    .reviews-section h4 {
+        font-size: 2em;
+    } 
+    .certificate-button{
+        font-size: 1em;
+    }
+    .last-section {
+        height: 60vh;
+    }
+    .logo {
+        font-size: 1.5em;
+    }
+    .header-button {
+        padding: 0.6em 1.4em 0.6em 1.4em;
+    }
+
+}
+
