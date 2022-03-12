@@ -82,7 +82,7 @@ Header section styling
 } 
 .header-section{
 width: 100%;
-height: 80vh;
+height: 100vh;
 /* UI Properties */
 background: transparent url('../assets/images/Group\ 1321.png') 0% 0% no-repeat padding-box;
 background-size: 100% 100%;
@@ -122,10 +122,11 @@ display: inline-flex;
 }
 .headerinner-section{
     margin: auto;
-    width: 85%;
+    width: 90%;
 }
 .header-1{
     float: left;
+    height: 45%;
 }
 .header-1 h4{
     text-align: left;
@@ -165,10 +166,11 @@ display: inline-flex;
 Carosel styling
 ****************************
 ***************************/
-.carousel-cell img{
+.carousel-cell img {
     width: 100%;
-    height: 40em;
-    object-fit: cover;
+    height: 23em;
+    object-fit: contain;
+    margin-top: 6em;
 }
 .flickity-page-dots .dot{
     background-color: #08083D;
@@ -262,7 +264,7 @@ Services section stylings
 ***************************/
 .services-section{
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background:#F3F4F9;
     background-repeat: no-repeat;
     background-size: 100%,100%;
@@ -922,7 +924,7 @@ Header section styling
     margin-top: 1em;
 }
 .header-1{
-    margin-top: 6em;
+    margin-top: 3em;
 }
 .h-1{
     font-size: 3em;
@@ -970,6 +972,13 @@ Header section styling
 .contact-section p{
     width: 90%;
 }
+.about-text h4 {
+    margin-top: 1em;
+}
+.headerinner-section {
+    margin: auto;
+    width: 80%;
+}
 
 /***************************
 ****************************
@@ -979,17 +988,18 @@ Mobile Section 1 stylings
 .mobile-img{
     display: block;
     width: 100%;
-    height: 35vh;
     background: #08083D;
     background-size: contain;
     background-size: 100% 100%;
+    height: 50vh;
     opacity: 1;
 }
 .mobile-img img{
-    display: block;
-    margin: auto;
-    width: 70%;
+    width: 80%;
+    margin: 2em auto;
+  
 }
+
 /***************************
 ****************************
 serivices stylings
@@ -1041,6 +1051,9 @@ serivices stylings
 .Image-3{
     display: none;
 }
+.Image-2{
+    display: none;
+}
 /***************************
 ****************************
 Cards stylings
@@ -1065,6 +1078,8 @@ Galley section stylings
 ***************************/
 .gallery-section .h-2 {
     font-size: 1.5em !important;
+    width: 90%;
+    margin: auto;
 }
 .gallery-section p {
     font-size: 1em;
@@ -1174,6 +1189,10 @@ Footer Stylings
 .mobile-footer{
     display: block;
 }
+
+
+
+
 }
 /***************************
 ****************************
@@ -1288,6 +1307,7 @@ About section styings
      .about-text p {
         font-size: 1.5em !important;
      }
+    
 /***************************
 ****************************
 Card Section stylings
@@ -1427,6 +1447,21 @@ Footer Stylings
     display: block;
 
 }
+
+.Image-1{
+    display: none;
+}
+.Image-3{
+    display: none;
+}
+.Image-2{
+    display: none;
+}
+.carousel {
+    display: block;
+}
+
+}
 /***************************
 ****************************
 Large Devices Stylings
@@ -1438,6 +1473,40 @@ Large Devices Stylings
 Header Stylings
 ****************************
 ***************************/
+.footer {
+display: none;
+}
+.mobile-footer{
+    display: block;
+}
+.last-right-section h4 {
+    font-size: 2em;
+}
+.last-left-section{
+    display: none;
+}
+.last-right-section{
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.float-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contact-section {
+    width: 100%;
+    height: 100vh;
+}
+
+.header-2 {
+    display: none !important;
+}
+
     .h-1 {
         font-size: 3em;
     }
@@ -1480,9 +1549,20 @@ Footer Stylings
     .links {
         gap: 1.5em;
     }
-
+    .Image-1{
+        display: none;
+    }
+    .Image-3{
+        display: none;
+    }
+    .Image-2{
+        display: none;
+    }
+    .carousel {
+        display: block;
+    }
+    
 }
-
 
 
 /***************************
@@ -1507,9 +1587,7 @@ Contact section stylings
 Galley section stylings
 ****************************
 ***************************/
-    .gallery-section .h-2 {
-        font-size: 3em;
-    }
+  
     .Image-3 {
      display: none;
     }
@@ -1545,6 +1623,13 @@ About Section stylings
     }
     .header-button {
         padding: 0.6em 1.4em 0.6em 1.4em;
+    }
+    .float-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1em;
     }
 
 }
