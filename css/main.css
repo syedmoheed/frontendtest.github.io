@@ -914,7 +914,7 @@ Header section styling
 
 .header-section {
     width: 100%;
-    height: 60vh;
+    height: 80vh;
     background: transparent url(../assets/images/Group\ 1321.png) 0% 0% no-repeat padding-box;
     background-size: contain;
     background-size: 100% 100%;
@@ -997,6 +997,9 @@ Mobile Section 1 stylings
 .mobile-img img{
     width: 80%;
     margin: 2em auto;
+    margin: auto;
+    display: block;
+    padding-top: 2em;
   
 }
 
