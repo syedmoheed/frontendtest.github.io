@@ -644,6 +644,7 @@ Reviews section stylings
     background:  url('../assets/images/Rectangle\ 1219.svg') 0% 0% no-repeat padding-box;
     background-size: cover;
     /* opacity: 0.45; */
+  background-color:#FFF;
 }
 .reviews-section h4{
     text-align: center;
